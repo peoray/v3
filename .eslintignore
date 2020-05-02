@@ -2,3 +2,6 @@ public
 static
 .cache
 content
+src/components
+src/pages
+src/templates
