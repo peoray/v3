@@ -114,8 +114,8 @@ export const postQuery = graphql`
         title
         thumbnail {
           childImageSharp {
-            fixed(width: 150, height: 150) {
-              ...GatsbyImageSharpFixed
+            sizes(maxWidth: 600) {
+              ...GatsbyImageSharpSizes
             }
           }
         }

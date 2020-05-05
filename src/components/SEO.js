@@ -20,7 +20,7 @@ function SEO(props) {
       : postNode.excerpt;
     // image = postMeta.thumbnail;
     if (postMeta.thumbnail) {
-      image = postMeta.thumbnail.childImageSharp.fixed.src
+      image = postMeta.thumbnail.childImageSharp.sizes.src
     }
     postURL = urljoin(config.siteUrl, replacePath(`/blog/${postPath}`));
   } else {
@@ -35,25 +35,24 @@ function SEO(props) {
     if (!imageURI.match(`(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]`)) {
       return urljoin(config.siteUrl, config.pathPrefix, imageURI);
     }
-
     return imageURI;
   };
 
-  image = getImagePath(image);
-  console.log(image)
+  // image = getImagePath(image);
   
   const getPublicationDate = () => {
     if (!postNode) return null;
-
+    
     if (!postNode.frontmatter) return null;
 
     if (!postNode.frontmatter.date) return null;
-
+    
     return moment(postNode.frontmatter.date, config.dateFromFormat).toDate();
   };
-
-
-  // image = urljoin(config.siteUrl, image);
+  
+  
+  image = urljoin(config.siteUrl, image);
+  console.log(image)
 
   const datePublished = getPublicationDate();
 
