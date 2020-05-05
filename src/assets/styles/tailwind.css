@@ -4,7 +4,7 @@
 
 @import "tailwindcss/components";
 
-:root {
+/* :root {
   --bg-background-primary: white;
   --bg-background-secondary: #f7fafc;
   --bg-background-tertiary: #e2e8f0;
@@ -15,7 +15,7 @@
   --text-copy-secondary: #4a5568;
 
   --border-border-color-primary: white;
-}
+} */
 
 .theme-light .search-highlighted {
   background: #f0fff4;
@@ -26,7 +26,7 @@
 }
 
 .theme-dark .markdown-body {
-  color: #24292e;
+  /* color: #24292e; */
 }
 
 .theme-dark .search-highlighted {
@@ -37,7 +37,7 @@
   background: #2d3748;
 }
 
-.theme-dark {
+:root {
   --bg-background-primary: #0d2438;
   --bg-background-secondary: #102c44;
   --bg-background-tertiary: #1e3951;
@@ -50,7 +50,7 @@
   --border-border-color-primary: #1a202c;
 }
 
-.theme-dark .markdown-body {
+:root .markdown-body {
   color: #cbd5e0;
 }
 

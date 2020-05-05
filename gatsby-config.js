@@ -104,10 +104,7 @@ module.exports = {
         printRejected: true, // Print removed selectors and processed file names
         develop: false,
         tailwind: true,
-        // whitelist: [/^token/, /^pre/, /^code/, /^command-line/, /^line-numbers/]
-        // whitelist: ['whitelist'], // Don't remove this selector
-        ignore: ['prismjs/'], // Ignore files/folders
-        // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
+        ignore: ['prismjs/'],
       },
     },
     {
@@ -134,19 +131,7 @@ module.exports = {
         ],
       },
     },
-    // {
-    //   resolve: 'gatsby-plugin-social-cards',
-    //   options: {
-    //     // ommit to skip
-    //     authorImage: './static/author.jpg',
-    //     // image to use when no cover in frontmatter
-    //     backgroundImage: './src/assets/images/mind_map.svg',
-    //     // author to use when no auth in frontmatter
-    //     defaultAuthor: 'Emmanuel Raymond',
-    //     // card design
-    //     design: 'default', // 'default' or 'card'
-    //   },
-    // },
+    
     'gatsby-plugin-offline',
     {
       resolve: 'gatsby-plugin-netlify-cms',

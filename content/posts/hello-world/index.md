@@ -1,6 +1,7 @@
 ---
 title: Hello World
 date: 2017-06-19
+updated: 2020-06-19
 description: 'My very first article :)'
 slug: 'hello-world'
 path: '/blog/hello-world'
