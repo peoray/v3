@@ -38,7 +38,7 @@ function SEO(props) {
     return imageURI;
   };
 
-  // image = getImagePath(image);
+  image = getImagePath(image);
   
   const getPublicationDate = () => {
     if (!postNode) return null;
@@ -51,7 +51,7 @@ function SEO(props) {
   };
   
   
-  image = urljoin(config.siteUrl, image);
+  // image = urljoin(config.siteUrl, image);
   console.log(image)
 
   const datePublished = getPublicationDate();
