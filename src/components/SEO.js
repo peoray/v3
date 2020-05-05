@@ -22,7 +22,7 @@ function SEO(props) {
     if (postMeta.thumbnail) {
       image = postMeta.thumbnail.childImageSharp.sizes.src
     }
-    postURL = urljoin(config.siteUrl, replacePath(`/blog/${postPath}`));
+    postURL = urljoin(config.siteUrl, replacePath(`${postPath}`));
   } else {
     title = config.siteTitle;
     description = config.siteDescription;
