@@ -9,36 +9,37 @@ function SEO(props) {
   const { postNode, postPath, postSEO } = props;
   let title;
   let description;
-  let image = '';
+  // let image = '';
   let postURL;
-
+  
   if (postSEO) {
     const postMeta = postNode.frontmatter;
     title = postMeta.title;
     description = postMeta.description
-      ? postMeta.description
-      : postNode.excerpt;
+    ? postMeta.description
+    : postNode.excerpt;
     // image = postMeta.thumbnail;
-    if (postMeta.thumbnail) {
-      image = postMeta.thumbnail.childImageSharp.sizes.src
-    }
+    // if (postMeta.thumbnail) {
+    //   image = postMeta.thumbnail.childImageSharp.sizes.src
+    // }
     postURL = urljoin(config.siteUrl, replacePath(`${postPath}`));
   } else {
     title = config.siteTitle;
     description = config.siteDescription;
     image = config.siteLogo;
   }
-
-
-
+  
+  
+  
   const getImagePath = (imageURI) => {
     if (!imageURI.match(`(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]`)) {
       return urljoin(config.siteUrl, config.pathPrefix, imageURI);
     }
     return imageURI;
   };
-
-  image = getImagePath(image);
+  
+  // image = getImagePath(image);
+  let image = `${config.siteUrl}/public/${postPath}/twitter-card.jpg`
   
   const getPublicationDate = () => {
     if (!postNode) return null;

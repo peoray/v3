@@ -9,8 +9,8 @@ published: true
 tags: ['blogging']
 category: ['Personal']
 template: post
-thumbnail: './images/blog.png'
-# thumbnail: './images/hello_world.jpg'
+# thumbnail: './images/blog.png'
+thumbnail: './images/hello_world.jpg'
 ---
 
 ![Hello world](./images/blog.png)

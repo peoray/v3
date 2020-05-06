@@ -30,11 +30,11 @@ function post(props) {
     config: { identifier: post.slug, title: post.title },
   };
   return (
-    <DefaultLayout>
+    <DefaultLayout  pathname={location.pathname}>
       <Helmet>
         <title>{`${post.title} – ${config.siteTitle}`}</title>
       </Helmet>
-      <SEO postPath={post.path} postNode={postNode} postSEO />
+      <SEO postPath={post.slug} postNode={postNode} postSEO />
       <div className='container-inner mx-auto my-16'>
         <h1 className='text-4xl font-bold leading-tight'>{post.title}</h1>
         <div className='text-copy-secondary mb-4'>
