@@ -31,7 +31,7 @@ function post(props) {
   };
   console.log(props.location.pathname)
   return (
-    <DefaultLayout  pathname={location.pathname}>
+    <DefaultLayout  pathname={props.location.pathname}>
       <Helmet>
         <title>{`${post.title} – ${config.siteTitle}`}</title>
       </Helmet>
