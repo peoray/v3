@@ -29,6 +29,7 @@ function post(props) {
     shortname: 'peoray',
     config: { identifier: post.slug, title: post.title },
   };
+  console.log(props.location.pathname)
   return (
     <DefaultLayout  pathname={location.pathname}>
       <Helmet>

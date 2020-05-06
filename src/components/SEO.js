@@ -9,7 +9,7 @@ function SEO(props) {
   const { postNode, postPath, postSEO } = props;
   let title;
   let description;
-  // let image = '';
+  let image = '';
   let postURL;
   
   if (postSEO) {
@@ -39,7 +39,7 @@ function SEO(props) {
   };
   
   // image = getImagePath(image);
-  let image = `${config.siteUrl}/public/${postPath}/twitter-card.jpg`
+   image = `${config.siteUrl}/public/${postPath}/twitter-card.jpg`
   
   const getPublicationDate = () => {
     if (!postNode) return null;
@@ -53,7 +53,6 @@ function SEO(props) {
   
   
   // image = urljoin(config.siteUrl, image);
-  console.log(image)
 
   const datePublished = getPublicationDate();
 
