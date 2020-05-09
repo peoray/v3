@@ -8,7 +8,7 @@ published: true
 tags: ['project', 'javascript']
 category: ['Web Development']
 template: post
-thumbnail: './images/preview.gif'
+thumbnail: './images/cover.png'
 ---
 
 ![gif demo of application](./images/preview.gif)

@@ -8,7 +8,7 @@ published: true
 tags: ['internship', 'learnfactory']
 category: ['Programming']
 template: post
-thumbnail: './images/preview.jpeg'
+thumbnail: './images/cover.png'
 ---
 
 ![Learnfactory group pictures with the interns](./images/preview.jpeg)

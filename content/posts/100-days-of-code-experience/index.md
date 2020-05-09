@@ -8,7 +8,7 @@ published: true
 tags: ['100 days of code']
 category: ['Programming']
 template: post
-thumbnail: './images/header.jpg'
+thumbnail: './images/cover.png'
 ---
 
 ![Code picture](./images/header.jpg)

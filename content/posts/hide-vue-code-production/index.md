@@ -8,7 +8,7 @@ path: '/blog/hide-vue-source-map-code-in-production'
 tags: ['vue', 'webpack']
 category: ['Web Development']
 template: post
-thumbnail: ''
+thumbnail: './images/cover.png'
 ---
 
 If you have ever created your Vue project using the Vue CLI and deployed to production before, chances are you might not know that your whole code is visible on the devtools.

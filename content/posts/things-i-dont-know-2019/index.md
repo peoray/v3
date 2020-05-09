@@ -8,7 +8,7 @@ path: "/blog/things-I-don't-know"
 tags: ['programming']
 category: ['Programming']
 template: post
-thumbnail: ''
+thumbnail: './images/cover.png'
 ---
 
 I have been writing code for over two years and looking back, it amazes me the number of things I don't know yet. It's a rat-race trying to catch up with the industry, the more you try hard to catch up, the further you realize you are behind. I want to use this opportunity to list out some programming technologies I don't know.

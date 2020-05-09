@@ -8,7 +8,7 @@ published: true
 tags: ['perseverance']
 category: ['Personal']
 template: post
-thumbnail: './images/header.jpg'
+thumbnail: './images/cover.png'
 ---
 
 ![Starting over](./images/header.jpg)

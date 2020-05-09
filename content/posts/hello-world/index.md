@@ -8,7 +8,7 @@ published: true
 tags: ['blogging']
 category: ['Personal']
 template: post
-thumbnail: './images/hello_world.jpg'
+thumbnail: './images/cover.png'
 ---
 
 ![Hello world](./images/hello_world.jpg)

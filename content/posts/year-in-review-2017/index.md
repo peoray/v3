@@ -8,7 +8,7 @@ published: true
 tags: ['year in review', 'reflections', 'life']
 category: ['Personal']
 template: post
-thumbnail: './images/2017.jpg'
+thumbnail: './images/cover.png'
 ---
 
 ![2017 picture](./images/2017.jpg)

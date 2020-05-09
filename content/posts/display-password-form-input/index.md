@@ -8,7 +8,7 @@ path: '/blog/display-password-form-input'
 tags: ['javascript']
 category: ['Web Development']
 template: post
-thumbnail: './images/preview.jpg'
+thumbnail: './images/cover.png'
 ---
 
 ![hero image](./images/preview.jpg)
