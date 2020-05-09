@@ -11,28 +11,33 @@ function SEO(props) {
   let description;
   let image = '';
   let postURL;
-  
+
   if (postSEO) {
     const postMeta = postNode.frontmatter;
     title = postMeta.title;
     description = postMeta.description
-    ? postMeta.description
-    : postNode.excerpt;
-    image = postMeta.thumbnail && postMeta.thumbnail.childImageSharp.sizes.src
+      ? postMeta.description
+      : postNode.excerpt;
+    // image = postMeta.thumbnail;
+    if (postMeta.thumbnail && postMeta.thumbnail.childImageSharp && postMeta.thumbnail.childImageSharp.sizes) {
+      image = postMeta.thumbnail.childImageSharp.sizes.src
+    }
     postURL = urljoin(config.siteUrl, replacePath(`${postPath}`));
   } else {
     title = config.siteTitle;
     description = config.siteDescription;
     image = config.siteLogo;
   }
-  
+
+
+
   const getImagePath = (imageURI) => {
     if (!imageURI.match(`(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]`)) {
       return urljoin(config.siteUrl, config.pathPrefix, imageURI);
     }
     return imageURI;
   };
-  
+
   image = getImagePath(image);
   
   const getPublicationDate = () => {
@@ -47,6 +52,7 @@ function SEO(props) {
   
   
   // image = urljoin(config.siteUrl, image);
+  console.log(image)
 
   const datePublished = getPublicationDate();
 
