@@ -104,14 +104,14 @@ function Blog(props) {
             </h2>
             <div className='text-copy-secondary mb-4'>
               <span>Published on {post.node.frontmatter.date}</span>
-              {post.node.frontmatter.updated ? (
+              {/* {post.node.frontmatter.updated ? (
                 <>
                   <span> &middot; </span>
                   <span>Updated on {post.node.frontmatter.updated}</span>
                 </>
               ) : (
                 ''
-              )}
+              )} */}
               {/* <span> &middot; </span> */}
               <br />
               <span>
@@ -166,7 +166,6 @@ export const postsQuery = graphql`
           frontmatter {
             title
             date(formatString: "MMMM D, Y")
-            updated(formatString: "MMMM D, Y")
             description
             path
             category

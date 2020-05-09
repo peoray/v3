@@ -13,7 +13,7 @@ thumbnail: './images/blog.png'
 
 In 2019, I wrote a blog [article](./things-I-don't-know) about the list of technologies I didn't know yet. It's been a year on from then and this is an update to the list as well as listing out the technologies I want to learn this year to improve as a software developer.
 
-# WHAT I HAVE LEARNED SO FAR
+## WHAT I HAVE LEARNED SO FAR
 
 - **Programming Languages:** I decided to test the waters of other languages and see how far I can sail. The first one I tried was Golang. My experience with it was not pleasing, the syntax was odd, to begin with, and on my part, having the mindset of a JavaScript developer while learning another language wasn't doing any good. I kept at it for two months and finally gave up after.
 
@@ -37,6 +37,6 @@ In 2019, I wrote a blog [article](./things-I-don't-know) about the list of techn
 
 - **SQL:** When I tell people I don't SQL databases, they look at me as if I have been living under a rock. But chances are if you are a JavaScript developer and you also use it on the backend, chances are you also don't know it. Almost all the materials and tutorials on the internet that teaches Node.js make use of a NoSQL database to teach, mainly MongoDB, so you likely follow that trend and practice with what you have been taught and already know. Well, I want to change that this year by getting my feet wet with SQL databases particularly MySQL and Postgress. This would increase my knowledge of how databases work and knowing which one is best to use for my projects.
 
-These are the major technologies I want to devote time to learn this year. Although I have other interests such as React Native, Nextjs, Data Structures and Algorithms, DevOps and generally getting better at problem solving.
+These are the major technologies I want to devote time to learn this year. Although I have other interests such as React Native, Nextjs, Data Structures and Algorithms, DevOps, AWS, Azure, Severless technologies such as Amplify, etc. and generally getting better at problem solving.
 
 I hope to take it one step at a time and ensure I do my best to complete my goals. Writing articles and building projects are the best ways for me to solidify my knowledge of what I'm learning, so these are the steps I'll be taking to ensuring my time learning the technologies is worth it.

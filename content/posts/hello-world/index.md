@@ -1,7 +1,6 @@
 ---
 title: Hello World
 date: 2017-06-19
-updated: 2020-06-19
 description: 'My very first article :)'
 slug: 'hello-world'
 path: '/blog/hello-world'
@@ -9,12 +8,10 @@ published: true
 tags: ['blogging']
 category: ['Personal']
 template: post
-# thumbnail: './images/blog.png'
 thumbnail: './images/hello_world.jpg'
 ---
 
-![Hello world](./images/blog.png)
-<!-- ![Hello world](./images/hello_world.jpg) -->
+![Hello world](./images/hello_world.jpg)
 
 Welcome to my first blog post! I felt that it would be customary for me to use a timeless greeting all techies and geeks would be used to seeing. I’ve been meaning to start a blog for a very long time, but I tend to procrastinate, one of the many reasons I am starting this blog. Finally, today I am writing my first ever article.
 

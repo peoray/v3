@@ -18,18 +18,13 @@ function SEO(props) {
     description = postMeta.description
     ? postMeta.description
     : postNode.excerpt;
-    // image = postMeta.thumbnail;
-    // if (postMeta.thumbnail) {
-    //   image = postMeta.thumbnail.childImageSharp.sizes.src
-    // }
+    image = postMeta.thumbnail && postMeta.thumbnail.childImageSharp.sizes.src
     postURL = urljoin(config.siteUrl, replacePath(`${postPath}`));
   } else {
     title = config.siteTitle;
     description = config.siteDescription;
     image = config.siteLogo;
   }
-  
-  
   
   const getImagePath = (imageURI) => {
     if (!imageURI.match(`(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]`)) {
@@ -38,8 +33,7 @@ function SEO(props) {
     return imageURI;
   };
   
-  // image = getImagePath(image);
-   image = `${config.siteUrl}/public/${postPath}/twitter-card.jpg`
+  image = getImagePath(image);
   
   const getPublicationDate = () => {
     if (!postNode) return null;

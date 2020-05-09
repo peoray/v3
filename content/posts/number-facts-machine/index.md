@@ -5,13 +5,13 @@ date: 2018-02-08
 slug: 'number-facts-machine'
 path: '/blog/number-facts-machine'
 published: true
-tags: ['project']
+tags: ['project', 'javascript']
 category: ['Web Development']
 template: post
-thumbnail: 'https://res.cloudinary.com/peoray/image/upload/v1530117604/nfm_zqyxkg.gif'
+thumbnail: './images/preview.gif'
 ---
 
-![gif demo of application](https://res.cloudinary.com/peoray/image/upload/v1530117604/nfm_zqyxkg.gif)
+![gif demo of application](./images/preview.gif)
 
 **UPDATE: I finally managed to host the app thanks to The Shalvah**
 
@@ -56,7 +56,7 @@ This will set the form input text field to an empty string and make the field bl
 
 I also wanted this to work when the user clicks a different radio button, say from number to year, the input should clear. This took a while but I finally got a solution from a friend who helped me out. Normally, radio buttons would return a node-list, so I had to loop through them and write the code to clear the form field.
 
-Next up, I wanted the facts text to disappear when a new value is being imputed. I only want it to appear after I click on the button to make the request. I had to tinker on this for a while but finally got it working.
+Next up, I wanted the facts text to disappear when a new value is being inputed. I only want it to appear after I click on the button to make the request. I had to tinker on this for a while but finally got it working.
 
 This project provided me with an opportunity to learn a lot especially using the `XMLHttpRequest` and working with the DOM. I did a lot of DOM manipulations in this project that will definitely be useful, moving on to other projects.
 

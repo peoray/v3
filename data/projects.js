@@ -1,7 +1,7 @@
 export default [
   {
     title: "pristine",
-    path: "/",
+    // path: "/",
     source: "https://github.com/peoray/pristine",
     description:
       "A full authenticated system with cool features. Made with Node.js and EJS templating engine",
@@ -15,7 +15,7 @@ export default [
   },
   {
     title: "webpack-config",
-    path: "/",
+    // path: "/",
     source: "https://github.com/peoray/webpack-config/",
     description:
       "A simple webpack config that covers sass and bootstrap and ES6+.",
@@ -29,7 +29,7 @@ export default [
   },
   {
     title: "Client Panel",
-    path: "/",
+    // path: "/",
     source: "https://github.com/peoray/client-panel",
     description:
       "A dashboard where a freelancer can add clients details and amount owned. Made with Vue and Firebase",

@@ -4,7 +4,7 @@ description: 'How to disable source map or debug mode in production for Vue.js a
 date: 2019-07-09T11:25:37+01:00
 published: true
 slug: 'hide-vue-code-production'
-path: '/blog/hide-vue-code-in-production'
+path: '/blog/hide-vue-source-map-code-in-production'
 tags: ['vue', 'webpack']
 category: ['Web Development']
 template: post
@@ -20,8 +20,6 @@ Now, if you are building a personal project, maybe for learning purposes or as o
 In this article, I will show you how to disable it so your code and data won't be exposed.
 
 If you used the Vue CLI to create your project, then follow these steps:
-
-You make changes to the internal webpack config with the vue.config.js file at the project root (you may need to create it manually).
 
 - Create a `vue.config.js` file in the root of your project folder. If you already have it, no need to recreate it again.
 

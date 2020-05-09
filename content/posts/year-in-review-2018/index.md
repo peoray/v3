@@ -5,7 +5,7 @@ date: 2018-12-31T20:09:29+01:00
 slug: 'year-in-review-2018'
 path: '/blog/year-in-review-2018'
 published: true
-tags: ['year-in-review', 'reflections', 'life']
+tags: ['year in review', 'reflections', 'life']
 category: ['Personal']
 template: post
 thumbnail: './images/2018.jpg'
@@ -31,7 +31,7 @@ This took a major chunk of the year, from April to November. I was part of Learn
 
 This year, I set myself a goal of reading 12 books and I failed spectacularly. At this point, I don't know if I value reading or just want to read because everybody on the internet says so. This time around, I'll just read when I feel like and not necessarily because I have too to meet up with a certain number of books to read like 12 or 100 books. How do people even read up to that amount?
 
-### Blogging ✍🏾
+### Blogging ✍
 
 Again, I failed at this. I was only able to write a few articles and just one technical article. blogging is hard, don't let anyone tell you otherwise. Even though this is something I really want to do, it's not easy actually sitting down to write an article. The mental stress involved can be terrifying, nevertheless, I'll have another go at it this year and see how I fare. This time around, I'm not putting any pressure on myself, I will write when I find the willpower to and if it's something I know will be worth the time and effort.
 

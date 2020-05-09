@@ -17,25 +17,18 @@ function post(props) {
   const postNode = props.data.markdownRemark;
   const post = postNode.frontmatter;
 
-  // let thumbnail
-
-  // if (post.thumbnail) {
-  //   thumbnail = post.thumbnail.childImageSharp.fixed
-  // }
-
   const githubLink = editOnGithub(post);
 
   const disqusConfig = {
     shortname: 'peoray',
     config: { identifier: post.slug, title: post.title },
   };
-  console.log(props.location.pathname)
   return (
-    <DefaultLayout  pathname={props.location.pathname}>
+    <DefaultLayout>
       <Helmet>
         <title>{`${post.title} – ${config.siteTitle}`}</title>
       </Helmet>
-      <SEO postPath={post.slug} postNode={postNode} postSEO />
+      <SEO postPath={post.path} postNode={postNode} postSEO />
       <div className='container-inner mx-auto my-16'>
         <h1 className='text-4xl font-bold leading-tight'>{post.title}</h1>
         <div className='text-copy-secondary mb-4'>

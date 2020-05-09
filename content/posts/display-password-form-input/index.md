@@ -65,7 +65,8 @@ password-toggle/
 Let’s get into development
 
 In our `index.html`, add the default boilerplate and name our title **“How to display or hide password”**. Also, let's link our CSS and JavaScript file to our HTML so we can be able to use both.
-<div class="filename">index.html</div>
+
+<!-- <div class="filename">index.html</div> -->
 
 ```html
 <!DOCTYPE html>
@@ -74,13 +75,13 @@ In our `index.html`, add the default boilerplate and name our title **“How to 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
     <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="style.css" />
     <title>How to display or hide password</title>
   </head>
   <body>
-    <script src="main.js"></script>
     <!-- JavaScript file -->
+    <script src="main.js"></script>
   </body>
 </html>
 ```
@@ -166,14 +167,11 @@ The `document.getElementById()` returns a HTML element whose id property matches
 
 After assigning the checkbox element to a variable, let’s write our function that will contain the code to make our app work.
 
-<div class="filename">index.html</div>
-
-```js{codeTitle: "main.js"}{numberLines: true}
+```javascript {numberLines: true}
 const showOrHidePassword = () => {
   const password = document.getElementById('password');
   if (password.type === 'password') {
     password.type = 'text';
-      // highlight-next-line
   } else {
     password.type = 'password';
   }

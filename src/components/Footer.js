@@ -5,7 +5,7 @@ function Footer() {
     <footer className="bg-green-700 text-white">
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8">
         <div className="mb-8 lg:mb-0">
-          <div>&copy; Emmanuel Raymond {new Date().getFullYear()}. All rights reserved.</div>
+          <div>&copy; Emmanuel Raymond {new Date().getFullYear()} v3. All rights reserved.</div>
           <div>
             Powered by {' '}
             <a

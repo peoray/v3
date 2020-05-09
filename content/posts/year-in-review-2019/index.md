@@ -5,7 +5,7 @@ date: 2019-12-31
 slug: 'year-in-review-2019'
 path: '/blog/year-in-review-2019'
 published: true
-tags: ['year-in-review', 'reflections', 'life']
+tags: ['year in review', 'reflections', 'life']
 category: ['Personal']
 template: post
 thumbnail: './images/2019.jpg'

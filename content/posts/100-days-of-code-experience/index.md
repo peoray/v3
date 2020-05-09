@@ -101,13 +101,13 @@ Like I said earlier, I haven’t completed any project prior to when I started t
 
 - I met awesome people who are always ready to give advice or offer help to my code challenges. I also gained followers on Twitter, this may not sound relevant but having a social audience is good as a way to showcase your skills and to network, You just never know.
 
-- Finally, during the challenge, I applied for a BootCamp. Towards, the end of the challenge, I received a call that I was accepted. Although this affected my productivity in the final days of the challenge as I had to do a lot of travelling and preparations for the BootCamp, it capped off a great period for me.
+- Finally, during the challenge, I applied for an Internship. Towards, the end of the challenge, I received a call that I was accepted. Although this affected my productivity in the final days of the challenge as I had to do a lot of travelling and preparations for the Internship, it capped off a great period for me.
 
-Will I do the challenge again? Hell Yeah! In my next challenge, I hope to tackle the blog aspect and work on the FreeCodeCamp new curriculum. Since I have started learning React (part of the BootCamp), I might as well build some of the Frontend projects with it.
+Will I do the challenge again? Hell Yeah! In my next challenge, I hope to tackle the blog aspect and work on the FreeCodeCamp new curriculum. Since I have started learning React (part of the Internship), I might as well build some of the Frontend projects with it.
 
 Thanks to The Shalvah, Gledsley Müller, Tobi, Kuba Michalski, the #100DaysOfCode Twitter and Slack community and to all the Chingu members who have been of tremendous help during this period.
 
-If you are still unsure whether to start the challenge or not, read this article by Karina .I. If that hasn’t convinced you yet, search #100DaysOfCode on Twitter and see all the people involved. If you commit to it, I promise you won’t remain the same after 100 days.
+If you are still unsure whether to start the challenge or not, read this [article](https://dev.to/karinaislam/5-reasons-to-start-the-100daysofcode-challenge-300  ) by Karina Islam. If that hasn’t convinced you yet, search #100DaysOfCode on Twitter and see all the people involved. If you commit to it, I promise you won’t remain the same after 100 days.
 
 > “Don’t wait until everything is just right. It will never be perfect. There will always be challenges, obstacles and less than perfect conditions. So what. Get started now. With each step you take, you will grow stronger and stronger, more and more skilled, more and more self-confident and more and more successful.”
 >
