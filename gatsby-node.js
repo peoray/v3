@@ -20,13 +20,16 @@ module.exports.createPages = async ({ graphql, actions }) => {
   const categoryTemplate = path.resolve("./src/templates/category.jsx")
   const res = await graphql(`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark (
+        sort: {order: ASC, fields: [frontmatter___date]} 
+      ) {
         edges {
           node {
             frontmatter {
               tags
-              category
               template
+              path
+              title
             }
             fields {
               slug
@@ -46,7 +49,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   const tagSet = new Set()
   const categorySet = new Set()
 
-  posts.forEach(edge => {
+  posts.forEach((edge, index) => {
     if (edge.node.frontmatter.tags) {
       edge.node.frontmatter.tags.forEach(tag => {
         tagSet.add(tag)
@@ -65,6 +68,8 @@ module.exports.createPages = async ({ graphql, actions }) => {
         path: `/blog/${edge.node.fields.slug}`,
         context: {
           slug: edge.node.fields.slug,
+          previous: index === 0 ? null : posts[index - 1].node,
+          next: index === posts.length - 1 ? null : posts[index + 1].node
         },
       })
     }

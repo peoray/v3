@@ -1,16 +1,13 @@
-import urljoin from "url-join"
-import moment from "moment"
-import config from "../../data/SiteConfig"
+import urljoin from 'url-join';
+import config from '../../data/SiteConfig';
 
-const editOnGithub = post => {
-  const date = moment.utc(post.date).format(config.dateFromFormat)
+const editOnGithub = (post) => {
   return urljoin(
     config.repo,
-    "/blob/develop/blog/posts",
-    `${date}-${post.slug}.md`
-  )
-}
-
+    '/blob/master/content/posts',
+    `${post.slug}/index.md`
+  );
+};
 
 // eslint-disable-next-line import/prefer-default-export
-export { editOnGithub }
+export { editOnGithub };

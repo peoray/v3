@@ -4,18 +4,22 @@ import DefaultLayout from '../layout/Index';
 import Newsletter from '../components/Newsletter';
 import SocialShare from '../components/SocialShare';
 import Bio from '../components/Bio';
-import { DiscussionEmbed } from 'disqus-react';
 import { editOnGithub } from '../utils/helpers';
 import kebabCase from 'lodash.kebabcase';
 import '../assets/styles/github-markdown.css';
 import { Helmet } from 'react-helmet';
 import SEO from '../components/SEO';
 import config from '../../data/SiteConfig';
+import Suggested from '../components/Suggested';
 
-function post(props) {
-  const { slug } = props.pageContext;
-  const postNode = props.data.markdownRemark;
+function post({data, pageContext}) {
+  // const { slug } = pageContext;
+  const { previous, next, slug} = pageContext
+  const postNode = data.markdownRemark;
   const post = postNode.frontmatter;
+
+  // console.log(next)
+  // console.log(previous)
 
   const githubLink = editOnGithub(post);
 
@@ -31,26 +35,26 @@ function post(props) {
       <SEO postPath={post.path} postNode={postNode} postSEO />
       <div className='container-inner mx-auto my-16'>
         <h1 className='text-4xl font-bold leading-tight'>{post.title}</h1>
-        <div className='text-copy-secondary mb-4'>
+        <div className='text-copy-secondary mt-2'>
           <span>{post.date}</span>
-          <span> &middot; </span>
+          <span className="mx-2"> &middot; </span>
           <span>
             <span role='img' aria-label='popcorn'>
               🍿
             </span>
             {postNode.timeToRead} min read
           </span>
-          <span> &middot; </span>
+          {/* <span> &middot; </span>
           <span>
             posted in{' '}
             <Link to={`category/${post.category.toString().toLowerCase()}`}>
               {post.category}
             </Link>
-          </span>
+          </span> */}
         </div>
         {/* <div className='text-xl text-gray-600 mb-4'>{post.date}</div> */}
 
-        <div className='flex flex-wrap text-sm'>
+        <div className='flex flex-wrap text-sm mt-4'>
           {post.tags.map((tag) => (
             <Link
               to={`tag/${kebabCase(tag)}`}
@@ -61,14 +65,14 @@ function post(props) {
             </Link>
           ))}
         </div>
-          <SocialShare postPath={post.path} postNode={postNode} />
+
         <div
-          className='markdown-body mb-8'
+          className='markdown-body mb-8 mt-12'
           dangerouslySetInnerHTML={{ __html: postNode.html }}
         />
         {/* <hr /> */}
         <div className='mb-8 mt-5'>
-          {/* <p>
+          <p>
             If you find any error or typo in this article, please feel free to{' '}
             <a
               href={githubLink}
@@ -79,13 +83,17 @@ function post(props) {
               edit on Github
             </a>
             .
-          </p> */}
-          {/* <p></p> */}
+          </p>
+
+          If this was helpful, interesting, or caused some other positive
+          emotion, please share!
           <SocialShare postPath={post.path} postNode={postNode} />
         </div>
-        <hr className='mb-4' />
-        <DiscussionEmbed {...disqusConfig} />
+
+        <Suggested previous={previous} next={next} />
+
       </div>
+
       <div className='container-inner mx-auto py-4'>
         <hr className='' />
       </div>

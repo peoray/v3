@@ -1,12 +1,13 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import urljoin from 'url-join';
 import config from '../../data/SiteConfig';
-import moment from 'moment'
 
-function SEO(props) {
+import urljoin from 'url-join';
+import dayjs from 'dayjs';
+
+function SEO({ postNode, postPath, postSEO, customDescription }) {
   const replacePath = (path) => (path === `/` ? path : path.replace(/\/$/, ``));
-  const { postNode, postPath, postSEO } = props;
+
   let title;
   let description;
   let image = '';
@@ -19,40 +20,44 @@ function SEO(props) {
       ? postMeta.description
       : postNode.excerpt;
     // image = postMeta.thumbnail;
-    if (postMeta.thumbnail && postMeta.thumbnail.childImageSharp && postMeta.thumbnail.childImageSharp.sizes) {
-      image = postMeta.thumbnail.childImageSharp.sizes.src
+    if (
+      postMeta.thumbnail &&
+      postMeta.thumbnail.childImageSharp &&
+      postMeta.thumbnail.childImageSharp.sizes
+    ) {
+      image = postMeta.thumbnail.childImageSharp.sizes.src;
     }
     postURL = urljoin(config.siteUrl, replacePath(`${postPath}`));
   } else {
     title = config.siteTitle;
-    description = config.siteDescription;
+    description = customDescription || config.siteDescription;
     image = config.siteLogo;
   }
 
-
-
   const getImagePath = (imageURI) => {
-    if (!imageURI.match(`(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]`)) {
+    if (
+      !imageURI.match(
+        `(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]`
+      )
+    ) {
       return urljoin(config.siteUrl, config.pathPrefix, imageURI);
     }
     return imageURI;
   };
 
   image = getImagePath(image);
-  
+
   const getPublicationDate = () => {
     if (!postNode) return null;
-    
+
     if (!postNode.frontmatter) return null;
 
     if (!postNode.frontmatter.date) return null;
-    
-    return moment(postNode.frontmatter.date, config.dateFromFormat).toDate();
+
+    return dayjs(postNode.frontmatter.date, config.dateFromFormat).toDate();
   };
-  
-  
+
   // image = urljoin(config.siteUrl, image);
-  console.log(image)
 
   const datePublished = getPublicationDate();
 
@@ -69,6 +74,8 @@ function SEO(props) {
   };
 
   const blogURL = urljoin(config.siteUrl, config.pathPrefix);
+  console.log(blogURL)
+
   const schemaOrgJSONLD = [
     {
       '@context': 'http://schema.org',

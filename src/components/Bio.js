@@ -1,15 +1,14 @@
 import React from 'react';
 import avatar from '../assets/images/author.jpg';
-import { TwitterFollowButton } from 'react-twitter-embed';
-import GitHubButton from 'react-github-btn';
+import SocialLinks from './SocialLinks';
 
 function Bio() {
   return (
     <div className='overflow-x-hidden border-gray-200 border-b'>
       <div className='get-to-know-me container-inner mx-auto text-xl pb-16 relative'>
-        {/* <h2 class='font-bold mb-6' id='about'>
-          Get to know me:
-        </h2> */}
+        <h2 className='font-bold mb-2 text-2xl text-center' id='about'>
+          About the Author
+        </h2>
 
         <div
           className='absolute left-0'
@@ -20,36 +19,23 @@ function Bio() {
           </svg>
         </div>
 
-        <div className='flex flex-col sm:flex-row justify-between items-center mb-16'>
-          <div>
+        <div className='flex flex-col sm:flex-row items-center mb-12'>
+          <div className='mb-6 lg:mb-0'>
             <img
               src={avatar}
               alt='avatar'
-              className='w-32 h-32 rounded-full mb-8 lg:mb-0'
+              className='w-32 h-32 rounded-full object-cover'
             />
           </div>
-          <div className='flex-1 text-lg sm:text-xl ml-6'>
+          <div className='flex-1 ml-6'>
             <p>
-              Join my adventure in discovering everything about web programming
-              and life. Everything on this site is for you, ad-free
+              Hi 👋, I'm Emmanuel. I write about the JavaScript ecosystem, CSS
+              and best practices in software development, web programming and
+              life. Everything on this site is ad-free and up to date.
             </p>
-            <div className='flex flex-wrap items-center mt-4'>
-              <div className='mr-4 mb-3 lg:mb-0'>
-                <GitHubButton
-                  href='https://github.com/peoray'
-                  data-size='large'
-                  data-show-count='true'
-                  aria-label='Follow @peoray on GitHub'
-                >
-                  Follow
-                </GitHubButton>
-              </div>
-              <div>
-                <TwitterFollowButton
-                  screenName='peoray_'
-                  options={{ size: 'large' }}
-                />
-              </div>
+
+            <div className='mt-2'>
+              <SocialLinks />
             </div>
           </div>
         </div>

@@ -8,7 +8,7 @@ function Newsletter() {
 
         <div className="w-4/5 mx-auto mb-8">
           <p className="mb-8 text-lg sm:text-xl">
-            Don't miss out on new articles from me, I promise not to spam you. I
+            Don't miss out on new articles and other interesting stuff from me, I promise not to spam you (I hate that too). I
             only send out an email at the end of every month.
           </p>
 

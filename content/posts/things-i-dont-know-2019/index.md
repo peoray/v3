@@ -4,7 +4,7 @@ description: "List of things I haven't used"
 date: 2019-01-05
 published: true
 slug: "things-i-dont-know-2019"
-path: "/blog/things-I-don't-know"
+path: "/blog/things-i-dont-know-2019"
 tags: ['programming']
 category: ['Programming']
 template: post

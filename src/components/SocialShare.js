@@ -29,8 +29,8 @@ function SocialShare(props) {
   const hashtags = [...new Set(hashtagsArr)];
 
   return (
-    <div className='flex flex-wrap my-6'>
-      <p className='font-bold mr-4'>Share on:</p>
+    <div className='flex flex-wrap my-2'>
+      {/* <p className='font-bold mr-4'>Share on:</p> */}
 
       {/* <RedditShareButton url={url} title={post.title} className='mr-4 mb-3 lg:mb-0'>
         <RedditIcon round size={32} />
@@ -44,13 +44,13 @@ function SocialShare(props) {
       >
         <TwitterIcon round size={32} />
       </TwitterShareButton>
-      {/* <FacebookShareButton
+      <FacebookShareButton
         url={url}
         quote={postNode.description}
         className='mr-4 mb-3 lg:mb-0'
       >
         <FacebookIcon round size={32} />
-      </FacebookShareButton> */}
+      </FacebookShareButton>
       <LinkedinShareButton
         url={url}
         title={post.title}

@@ -118,6 +118,10 @@ nav .active {
   height: 100%;
   border: 0;
 }
+
+a {
+  cursor: pointer !important;
+}
 /* purgecss end ignore */
 
 @import "tailwindcss/utilities";

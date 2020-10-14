@@ -1,9 +1,9 @@
 ---
-title: 'Building my First Project: Number Facts Machine'
+title: 'Building a Project: Number Facts Generator'
 description: 'My experience creating my first ever project!'
 date: 2018-02-08
-slug: 'number-facts-machine'
-path: '/blog/number-facts-machine'
+slug: 'number-facts-generator'
+path: '/blog/number-facts-generator'
 published: true
 tags: ['project', 'javascript']
 category: ['Web Development']
@@ -15,9 +15,9 @@ thumbnail: './images/cover.png'
 
 **UPDATE: I finally managed to host the app thanks to The Shalvah**
 
-Check out the app: [code](https://www.github.com/peoray/number-facts-machine/) | [view](https://peoray.github.io/number-facts-machine/)
+Check out the app: [code](https://www.github.com/peoray/number-facts-generator/) | [view](https://peoray.github.io/number-facts-generator/)
 
-This is the first ever project I completed and I got the inspiration from [Brad Traversy YouTube video](https://www.youtube.com/watch?v=tUE2Nic21BA&list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyQtX&index=17). I decided to add my own features and include options for both year and date request.
+This is a recent project I completed and I got the inspiration from [Brad Traversy YouTube video](https://www.youtube.com/watch?v=tUE2Nic21BA&list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyQtX&index=17). I decided to add my own features and include options for both year and date request.
 
 The project is based on the [Numbers API](http://numbersapi.com/#42) where the data is gotten from. The documentation on the usage of the API is pretty straightforward and It’s a free API.
 

@@ -1,6 +1,5 @@
 /* eslint-disable global-require */
 const urljoin = require('url-join');
-const path = require('path');
 const config = require('./data/SiteConfig');
 
 module.exports = {
@@ -17,13 +16,12 @@ module.exports = {
       image_url: `${urljoin(
         config.siteUrl,
         config.pathPrefix
-      )}/logos/logo-512.png`,
+      )}/logos/avatar.jpeg`,
       copyright: config.copyright,
     },
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-lodash',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -65,9 +63,6 @@ module.exports = {
               ],
               services: {},
             },
-          },
-          {
-            resolve: 'gatsby-remark-responsive-iframe',
           },
           {
             resolve: `gatsby-remark-social-cards`,
@@ -166,30 +161,20 @@ module.exports = {
         display: 'minimal-ui',
         icons: [
           {
-            src: '/logos/logo-192.png',
+            src: '/logos/avatar.jpeg',
             sizes: '192x192',
-            type: 'image/png',
+            type: 'image/jpeg',
           },
-          {
-            src: '/logos/logo-512.png',
-            sizes: '512x512',
-            type: 'image/png',
-          },
+          // {
+          //   src: '/logos/logo-512.png',
+          //   sizes: '512x512',
+          //   type: 'image/png',
+          // },
         ],
       },
     },
 
     'gatsby-plugin-offline',
-    {
-      resolve: 'gatsby-plugin-netlify-cms',
-      options: {
-        modulePath: path.resolve('src/netlifycms/index.js'), // default: undefined
-        enableIdentityWidget: true,
-        publicPath: 'admin',
-        htmlTitle: 'Content Manager',
-        includeRobots: false,
-      },
-    },
     {
       resolve: 'gatsby-plugin-feed',
       options: {
@@ -224,8 +209,8 @@ module.exports = {
                 date: edge.node.fields.date,
                 title: edge.node.frontmatter.title,
                 description: edge.node.excerpt,
-                url: rssMetadata.site_url + edge.node.fields.slug,
-                guid: rssMetadata.site_url + edge.node.fields.slug,
+                url: rssMetadata.site_url + edge.node.frontmatter.path,
+                guid: rssMetadata.site_url + edge.node.frontmatter.path,
                 custom_elements: [
                   { 'content:encoded': edge.node.html },
                   { author: config.userEmail },

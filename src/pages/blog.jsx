@@ -45,9 +45,15 @@ function Blog(props) {
       <Helmet
         title={`Blog - ${config.siteTitle} | Full Stack Software Developer`}
       />
-      <SEO />
+      <SEO customDescription="Posts, tutorials, explanations, snippets, thoughts, musings, and
+          everything else."/>
       <div className='container-inner mx-auto py-10'>
-        <h2 className='text-3xl font-bold mb-6'>Articles</h2>
+        <h1 className='text-5xl font-bold mb-2'>Articles</h1>
+        <p className='mb-6 text-xl'>
+          Posts, tutorials, explanations, snippets, thoughts, musings, and
+          everything else.
+        </p>
+
         <div className='flex justify-center mb-8'>
           <div className='relative w-full'>
             <input
@@ -90,11 +96,16 @@ function Blog(props) {
         </div>
 
         {posts.map((post) => (
-          <div
-            key={post.node.id}
-            className='post border-gray-400 border-b mb-12'
-          >
-            <h2 className='text-3xl font-bold'>
+          <div key={post.node.id} className='post mb-6'>
+            <span className='opacity-75'>
+              {post.node.frontmatter.date}
+              <span> &middot; </span>
+              <span role='img' aria-label='popcorn'>
+                🍿
+              </span>
+              {post.node.timeToRead} min read
+            </span>
+            <h2 className='text-2xl font-bold'>
               <Link
                 to={`blog/${post.node.fields.slug}`}
                 className='text-copy-primary'
@@ -102,49 +113,6 @@ function Blog(props) {
                 {post.node.frontmatter.title}
               </Link>
             </h2>
-            <div className='text-copy-secondary mb-4'>
-              <span>Published on {post.node.frontmatter.date}</span>
-              {/* {post.node.frontmatter.updated ? (
-                <>
-                  <span> &middot; </span>
-                  <span>Updated on {post.node.frontmatter.updated}</span>
-                </>
-              ) : (
-                ''
-              )} */}
-              {/* <span> &middot; </span> */}
-              <br />
-              <span>
-                <span role='img' aria-label='popcorn'>
-                  🍿
-                </span>
-                {post.node.timeToRead} min read
-              </span>
-              <span> &middot; </span>
-              <span>
-                posted in{' '}
-                <Link
-                  to={`category/${post.node.frontmatter.category
-                    .toString()
-                    .toLowerCase()}`}
-                >
-                  {post.node.frontmatter.category}
-                </Link>
-              </span>
-            </div>
-
-            <div className='text-lg mb-4'>
-              {post.node.frontmatter.description}
-            </div>
-
-            <div className='mb-8'>
-              <Link
-                to={post.node.frontmatter.path}
-                className='font-bold uppercase'
-              >
-                Read More
-              </Link>
-            </div>
           </div>
         ))}
       </div>
