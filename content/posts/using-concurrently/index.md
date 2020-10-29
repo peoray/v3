@@ -8,6 +8,7 @@ path: '/blog/using-concurrently'
 tags: ['npm', 'concurrently', 'react', 'node']
 category: ['Web Development']
 template: post
+lastmod: false
 thumbnail: './images/cover.png'
 ---
 
@@ -34,7 +35,7 @@ Concurrently is an npm package that allows you to run multiple commands on your 
 
 To use concurrently, you need to install it via [npm](https://www.npmjs.com/package/concurrently) with the command:
 
-```js
+```bash
 npm install --save-dev concurrently
 ```
 
@@ -42,13 +43,13 @@ The `--save-dev` flag will tell npm to install it as a devDependency.
 
 To then add it as an npm script, you will add it in your `package.json` file:
 
-```js
+```json
 "script-name": concurrently "one process" "another process"
 ```
 
 Using the example above, in order to use concurrently to start up our React application and Node server, you will need to add a script in the server's `package.json` file:
 
-```js
+```json
     "client-install": "npm install --prefix client",
     "start": "node server.js",
     "server": "nodemon server.js",

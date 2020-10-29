@@ -8,6 +8,7 @@ published: true
 tags: ['sql', 'python', 'typescript', 'react-native', 'graphql']
 category: ['Programming']
 template: post
+lastmod: false
 thumbnail: './images/cover.png'
 ---
 

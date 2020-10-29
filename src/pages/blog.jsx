@@ -3,10 +3,10 @@ import { graphql, Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import DefaultLayout from '../layout/Index';
 import SEO from '../components/SEO';
+import Post from '../components/Post';
 import config from '../../data/SiteConfig';
 
-function Blog(props) {
-  const { data } = props;
+function Blog({ data }) {
   const allPosts = data.allMarkdownRemark.edges;
 
   const emptyQuery = '';
@@ -45,13 +45,15 @@ function Blog(props) {
       <Helmet
         title={`Blog - ${config.siteTitle} | Full Stack Software Developer`}
       />
-      <SEO customDescription="Posts, tutorials, explanations, snippets, thoughts, musings, and
-          everything else."/>
+      <SEO
+        customDescription='Posts, tutorials, explanations, snippets, thoughts, musings, and
+          everything else.'
+      />
       <div className='container-inner mx-auto py-10'>
         <h1 className='text-5xl font-bold mb-2'>Articles</h1>
         <p className='mb-6 text-xl'>
-          Posts, tutorials, explanations, snippets, thoughts, musings, and
-          everything else.
+          Up to date Posts, tutorials, explanations, snippets, thoughts,
+          musings, and everything else.
         </p>
 
         <div className='flex justify-center mb-8'>
@@ -96,24 +98,7 @@ function Blog(props) {
         </div>
 
         {posts.map((post) => (
-          <div key={post.node.id} className='post mb-6'>
-            <span className='opacity-75'>
-              {post.node.frontmatter.date}
-              <span> &middot; </span>
-              <span role='img' aria-label='popcorn'>
-                🍿
-              </span>
-              {post.node.timeToRead} min read
-            </span>
-            <h2 className='text-2xl font-bold'>
-              <Link
-                to={`blog/${post.node.fields.slug}`}
-                className='text-copy-primary'
-              >
-                {post.node.frontmatter.title}
-              </Link>
-            </h2>
-          </div>
+          <Post post={post} key={post.node.id} />
         ))}
       </div>
     </DefaultLayout>
@@ -133,7 +118,7 @@ export const postsQuery = graphql`
         node {
           frontmatter {
             title
-            date(formatString: "MMMM D, Y")
+            date(formatString: "MMM DD, Y")
             description
             path
             category
@@ -143,6 +128,11 @@ export const postsQuery = graphql`
           id
           fields {
             slug
+          }
+          parent {
+            ... on File {
+              mtime(formatString: "MMM DD, Y")
+            }
           }
         }
       }

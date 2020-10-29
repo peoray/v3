@@ -8,6 +8,7 @@ published: true
 tags: ['blogging']
 category: ['Personal']
 template: post
+lastmod: false
 thumbnail: './images/cover.png'
 ---
 

@@ -8,6 +8,7 @@ path: '/blog/hide-vue-source-map-code-in-production'
 tags: ['vue', 'webpack']
 category: ['Web Development']
 template: post
+lastmod: false
 thumbnail: './images/cover.png'
 ---
 

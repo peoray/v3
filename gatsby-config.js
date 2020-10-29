@@ -93,18 +93,18 @@ module.exports = {
                   '- Emmmanuel Raymond',
                   // { field: "author" },
                   ' » ',
-                  { field: 'date', format: 'mmmm dS' },
+                  { field: 'date', format: 'mmmm dS, yyyy' },
                 ],
                 // Currently only supports DejaVuSansCondensed
                 // More fonts coming soon!
                 font: 'DejaVuSansCondensed',
-                color: 'black', // black|white
+                color: 'white', // black|white
                 size: 24, // 16|24|32|48|64
                 style: 'normal', // normal|bold|italic
                 x: null, // Will default to xMargin
                 y: null, // Will default to cardHeight - yMargin - size
               },
-              background: '#FFFFFF', // Background color for the card
+              background: '#0d2438', // Background color for the card
               xMargin: 24, // Edge margin used when x value is not set
               yMargin: 24, // Edge margin used when y value is not set
             },
@@ -134,6 +134,7 @@ module.exports = {
     'gatsby-plugin-catch-links',
     'gatsby-plugin-twitter',
     'gatsby-plugin-sitemap',
+    // `gatsby-plugin-advanced-sitemap`,
     {
       resolve: 'gatsby-plugin-postcss',
       options: {

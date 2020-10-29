@@ -8,6 +8,7 @@ path: "/blog/things-i-dont-know-2019"
 tags: ['programming']
 category: ['Programming']
 template: post
+lastmod: false
 thumbnail: './images/cover.png'
 ---
 

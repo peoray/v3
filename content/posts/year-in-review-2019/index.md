@@ -8,6 +8,7 @@ published: true
 tags: ['year in review', 'reflections', 'life']
 category: ['Personal']
 template: post
+lastmod: false
 thumbnail: './images/cover.png'
 ---
 

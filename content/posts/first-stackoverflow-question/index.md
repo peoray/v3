@@ -8,6 +8,7 @@ path: '/blog/first-stackoverflow-question'
 tags: ['stackoverflow']
 category: ['Programming']
 template: post
+lastmod: false
 thumbnail: './images/cover.png'
 ---
 

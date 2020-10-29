@@ -8,6 +8,7 @@ path: '/blog/display-password-form-input'
 tags: ['javascript']
 category: ['Web Development']
 template: post
+lastmod: false
 thumbnail: './images/cover.png'
 ---
 
