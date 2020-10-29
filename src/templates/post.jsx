@@ -12,14 +12,11 @@ import SEO from '../components/SEO';
 import config from '../../data/SiteConfig';
 import Suggested from '../components/Suggested';
 
-function post({data, pageContext}) {
-  // const { slug } = pageContext;
-  const { previous, next, slug} = pageContext
+function post({ data, pageContext }) {
+  const { previous, next, slug } = pageContext;
   const postNode = data.markdownRemark;
   const post = postNode.frontmatter;
-
-  // console.log(next)
-  // console.log(previous)
+  const lastmod = postNode.parent.mtime;
 
   const githubLink = editOnGithub(post);
 
@@ -35,24 +32,23 @@ function post({data, pageContext}) {
       <SEO postPath={post.path} postNode={postNode} postSEO />
       <div className='container-inner mx-auto my-16'>
         <h1 className='text-4xl font-bold leading-tight'>{post.title}</h1>
-        <div className='text-copy-secondary mt-2'>
-          <span>{post.date}</span>
-          <span className="mx-2"> &middot; </span>
+        <div className='text-copy-secondary mt-2 text-gray-600'>
+          {!post.lastmod ? (
+            <span>{post.date}</span>
+          ) : (
+            <span>Last Updated on {lastmod}</span>
+          )}
+
+          <span className='mx-2'> &middot; </span>
           <span>
-            <span role='img' aria-label='popcorn'>
-              🍿
+            {/* <span className='align-middle' role='img'  aria-label='popcorn'> */}
+            <span className='align-middle' role='img' aria-label='clock'>
+              {/* 🍿 */}
+              🕒
             </span>
-            {postNode.timeToRead} min read
+            <span className='ml-2'>{postNode.timeToRead} min read</span>
           </span>
-          {/* <span> &middot; </span>
-          <span>
-            posted in{' '}
-            <Link to={`category/${post.category.toString().toLowerCase()}`}>
-              {post.category}
-            </Link>
-          </span> */}
         </div>
-        {/* <div className='text-xl text-gray-600 mb-4'>{post.date}</div> */}
 
         <div className='flex flex-wrap text-sm mt-4'>
           {post.tags.map((tag) => (
@@ -84,14 +80,12 @@ function post({data, pageContext}) {
             </a>
             .
           </p>
-
           If this was helpful, interesting, or caused some other positive
           emotion, please share!
           <SocialShare postPath={post.path} postNode={postNode} />
         </div>
 
         <Suggested previous={previous} next={next} />
-
       </div>
 
       <div className='container-inner mx-auto py-4'>
@@ -108,9 +102,10 @@ export const postQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
-        date(formatString: "MMMM D, Y")
+        date(formatString: "MMM DD, Y")
         slug
         description
+        lastmod
         path
         tags
         title
@@ -123,6 +118,12 @@ export const postQuery = graphql`
         }
         category
       }
+      parent {
+        ... on File {
+          mtime(formatString: "MMM DD, Y")
+        }
+      }
+
       html
       timeToRead
     }

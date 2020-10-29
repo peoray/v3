@@ -8,6 +8,7 @@ published: true
 tags: ['internship', 'learnfactory']
 category: ['Programming']
 template: post
+lastmod: false
 thumbnail: './images/cover.png'
 ---
 

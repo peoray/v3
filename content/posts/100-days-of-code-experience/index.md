@@ -8,6 +8,7 @@ published: true
 tags: ['100 days of code']
 category: ['Programming']
 template: post
+lastmod: false
 thumbnail: './images/cover.png'
 ---
 

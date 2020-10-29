@@ -8,6 +8,7 @@ published: true
 tags: ['perseverance']
 category: ['Personal']
 template: post
+lastmod: false
 thumbnail: './images/cover.png'
 ---
 

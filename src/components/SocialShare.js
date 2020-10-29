@@ -3,21 +3,19 @@ import {
   FacebookShareButton,
   LinkedinShareButton,
   TwitterShareButton,
-  TelegramShareButton,
   RedditShareButton,
   FacebookIcon,
   TwitterIcon,
-  TelegramIcon,
   LinkedinIcon,
   RedditIcon,
 } from 'react-share';
 import urljoin from 'url-join';
 import config from '../../data/SiteConfig';
 
-function SocialShare(props) {
-  const { postNode, postPath, mobile } = props;
+function SocialShare({ postNode, postPath, mobile }) {
   const post = postNode.frontmatter;
   const url = urljoin(config.siteUrl, config.pathPrefix, postPath);
+  console.log(url)
   const hashtagsArr = [
     ...post.tags,
     '100DaysOfCode',
@@ -60,9 +58,9 @@ function SocialShare(props) {
       >
         <LinkedinIcon round size={32} />
       </LinkedinShareButton>
-      {/* <TelegramShareButton url={url} className=''>
-        <TelegramIcon round size={32} />
-      </TelegramShareButton> */}
+      <RedditShareButton url={url} title={post.title}>
+        <RedditIcon round size={32} />
+      </RedditShareButton>
     </div>
   );
 }

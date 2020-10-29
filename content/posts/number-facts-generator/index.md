@@ -8,6 +8,7 @@ published: true
 tags: ['project', 'javascript']
 category: ['Web Development']
 template: post
+lastmod: false
 thumbnail: './images/cover.png'
 ---
 
