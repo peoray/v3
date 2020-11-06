@@ -69,7 +69,7 @@ function post({ data, pageContext }) {
 
         {/* <hr /> */}
 
-        <div className="text-center text-3xl md:text-5xl tracking-widest">
+        <div className='text-center text-3xl md:text-5xl tracking-widest'>
           <span>.</span>
           <span>.</span>
           <span>.</span>

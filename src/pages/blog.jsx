@@ -129,6 +129,11 @@ export const postsQuery = graphql`
           fields {
             slug
           }
+          parent {
+            ... on File {
+              mtime(formatString: "MMM DD, Y")
+            }
+          }
         }
       }
     }
