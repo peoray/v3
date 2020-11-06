@@ -63,10 +63,18 @@ function post({ data, pageContext }) {
         </div>
 
         <div
-          className='markdown-body mb-8 mt-12'
+          className='markdown-body mt-12'
           dangerouslySetInnerHTML={{ __html: postNode.html }}
         />
+
         {/* <hr /> */}
+
+        <div className="text-center text-3xl md:text-5xl tracking-widest">
+          <span>.</span>
+          <span>.</span>
+          <span>.</span>
+        </div>
+
         <div className='mb-8 mt-5'>
           <p>
             If you find any error or typo in this article, please feel free to{' '}
@@ -80,9 +88,14 @@ function post({ data, pageContext }) {
             </a>
             .
           </p>
-          If this was helpful, interesting, or caused some other positive
-          emotion, please share!
-          <SocialShare postPath={post.path} postNode={postNode} />
+
+          <div className='mt-6'>
+            <p>
+              If this was helpful, interesting, or caused some other positive
+              emotion, please share!
+            </p>
+            <SocialShare postPath={post.path} postNode={postNode} />
+          </div>
         </div>
 
         <Suggested previous={previous} next={next} />

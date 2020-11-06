@@ -27,7 +27,7 @@ function SocialShare({ postNode, postPath, mobile }) {
   const hashtags = [...new Set(hashtagsArr)];
 
   return (
-    <div className='flex flex-wrap my-2'>
+    <div className='flex flex-wrap items-baseline my-2'>
       {/* <p className='font-bold mr-4'>Share on:</p> */}
 
       {/* <RedditShareButton url={url} title={post.title} className='mr-4 mb-3 lg:mb-0'>

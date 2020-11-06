@@ -35,7 +35,7 @@ function ProjectListing(props) {
                       rel='nofollow noopener noreferrer'
                       href={project.source}
                     >
-                      Github
+                      source
                     </a>
                     {project.path ? (
                       <>

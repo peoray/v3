@@ -118,7 +118,7 @@ export const postsQuery = graphql`
         node {
           frontmatter {
             title
-            date(formatString: "MMM DD, Y")
+            date(formatString: "MMMM DD, Y")
             description
             path
             category
@@ -128,11 +128,6 @@ export const postsQuery = graphql`
           id
           fields {
             slug
-          }
-          parent {
-            ... on File {
-              mtime(formatString: "MMM DD, Y")
-            }
           }
         }
       }

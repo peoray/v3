@@ -10,7 +10,7 @@ import config from "../../data/SiteConfig"
 
 export default () => (
   <DefaultLayout>
-    <Helmet title={`Home - ${config.siteTitle} | Full Stack Software Developer`} />
+    <Helmet title={`Home - ${config.siteTitle} | Software Developer and Open Source Enthusiast`} />
     <SEO />
     <About />
     <ProjectListing />

@@ -37,22 +37,21 @@ function About() {
 
           <p className='mt-2'>
             {' '}
-            I love everything Javascript and enjoy writing and teaching it
-            through code and words. I’ve been doing web development for over 4+
-            years and enjoy working with technologies such as Vue and Node. I
+            Currently, I work with Javascript and enjoy writing and teaching it
+            through code and words. I’ve been doing software development for over 4+
+            years and enjoy working with technologies such as Javascript, Vue, Node, MongoDB, TailwindCSS, etc. I
             put great emphasis on code quality, testing and performance
             throughout my projects.
           </p>
 
           <p className="mt-2">
-            Besides programming and writing for this blog, I enjoy watching Football and Movies,
-            playing Chess when I can, hanging out with friends and family,
-            reading books on psychology and sociology, and playing around with
-            my Guitar.
+            Besides programming and writing for this blog, I enjoy watching football (real one) and movies,
+            playing chess when I can, hanging out with friends and family,
+            reading books, and doing my best to learn the Guitar.
           </p>
 
           <p className='mt-2'>
-            Join my adventure in discovering everything about web programming
+            Join my adventure in discovering everything about software development
             and life.
           </p>
         </div>
