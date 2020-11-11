@@ -6,7 +6,7 @@
   </a>
 
   <a href="https://app.netlify.com/sites/peoray/deploys">
-    <img src="https://api.netlify.com/api/v1/badges/4cdc27e1-6322-45b7-9096-8ab2a8c168d3/deploy-status">
+    <img src="https://api.netlify.com/api/v1/badges/b6f5fac1-3b5e-4954-bda7-64675ba6fd50/deploy-status">
   </a>
 </div>
 
