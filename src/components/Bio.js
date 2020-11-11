@@ -29,9 +29,9 @@ function Bio() {
           </div>
           <div className='flex-1 ml-6'>
             <p>
-              Hi 👋, I'm Emmanuel. I write about the JavaScript ecosystem, CSS
-              and best practices in software development, web programming and
-              life. Everything on this site is ad-free and up to date.
+              Hi 👋, I'm Emmanuel. I write about the JavaScript ecosystem,
+              software development and everything in-between. Everything on this
+              site is ad-free and up to date.
             </p>
 
             <div className='mt-2'>

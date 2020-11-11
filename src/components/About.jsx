@@ -11,7 +11,7 @@ function About() {
         <div className='font-bold lg:focus:w-full sm:w-3/5 text-center sm:text-left'>
           <div className='text-5xl leading-tight'>Emmanuel Raymond</div>
           <div className='text-xl text-green-700 leading-tight'>
-            Software Developer and Open Source Enthusiast
+            Software Engineer and Open Source Enthusiast
           </div>
           <div className='mt-2 flex justify-center md:justify-start'>
             <SocialLinks />
@@ -37,23 +37,24 @@ function About() {
 
           <p className='mt-2'>
             {' '}
-            Currently, I work with Javascript and enjoy writing and teaching it
-            through code and words. I’ve been doing software development for over 4+
-            years and enjoy working with technologies such as Javascript, Vue, Node, MongoDB, TailwindCSS, etc. I
-            put great emphasis on code quality, testing and performance
+            I’ve been doing software development for over 4+ years and enjoy
+            working with technologies to build products. Currently, I work with
+            Javascript and enjoy writing and teaching it through code and words.
+            I put great emphasis on code quality, testing and performance
             throughout my projects.
           </p>
 
-          <p className="mt-2">
-            Besides programming and writing for this blog, I enjoy watching football (real one) and movies,
-            playing chess when I can, hanging out with friends and family,
-            reading books, and doing my best to learn the Guitar.
+          <p className='mt-2'>
+            Besides programming and writing for this blog, I enjoy watching
+            football (real one) and movies, playing chess when I can, hanging
+            out with friends and family, reading books, and doing my best to
+            learn the Guitar.
           </p>
 
-          <p className='mt-2'>
-            Join my adventure in discovering everything about software development
-            and life.
-          </p>
+          {/* <p className='mt-2'>
+            Join my adventure in discovering everything about my experiences in software
+            development and everything in-between.
+          </p> */}
         </div>
 
         <div className='flex justify-between items-center py-6'>
