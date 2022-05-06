@@ -5,8 +5,8 @@ date: 2018-04-27
 slug: '100-days-of-code-experience'
 path: '/blog/100-days-of-code-experience'
 published: true
-tags: ['100 days of code']
-category: ['Programming']
+tags: ['100 days of code', 'programming', 'career']
+# category: ['Programming']
 template: post
 lastmod: false
 thumbnail: './images/cover.png'
@@ -108,7 +108,7 @@ Will I do the challenge again? Hell Yeah! In my next challenge, I hope to tackle
 
 Thanks to The Shalvah, Gledsley Müller, Tobi, Kuba Michalski, the #100DaysOfCode Twitter and Slack community and to all the Chingu members who have been of tremendous help during this period.
 
-If you are still unsure whether to start the challenge or not, read this [article](https://dev.to/karinaislam/5-reasons-to-start-the-100daysofcode-challenge-300  ) by Karina Islam. If that hasn’t convinced you yet, search #100DaysOfCode on Twitter and see all the people involved. If you commit to it, I promise you won’t remain the same after 100 days.
+If you are still unsure whether to start the challenge or not, read this [article](https://dev.to/karinaislam/5-reasons-to-start-the-100daysofcode-challenge-300) by Karina Islam. If that hasn’t convinced you yet, search #100DaysOfCode on Twitter and see all the people involved. If you commit to it, I promise you won’t remain the same after 100 days.
 
 > “Don’t wait until everything is just right. It will never be perfect. There will always be challenges, obstacles and less than perfect conditions. So what. Get started now. With each step you take, you will grow stronger and stronger, more and more skilled, more and more self-confident and more and more successful.”
 >

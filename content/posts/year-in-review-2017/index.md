@@ -5,8 +5,8 @@ date: 2017-12-31
 slug: 'year-in-review-2017'
 path: '/blog/year-in-review-2017'
 published: true
-tags: ['year in review', 'reflections', 'life']
-category: ['Personal']
+tags: ['year in review', 'career']
+# category: ['Personal']
 template: post
 lastmod: false
 thumbnail: './images/cover.png'

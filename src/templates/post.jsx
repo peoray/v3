@@ -30,9 +30,9 @@ function post({ data, pageContext }) {
         <title>{`${post.title} – ${config.siteTitle}`}</title>
       </Helmet>
       <SEO postPath={post.path} postNode={postNode} postSEO />
-      <div className='container-inner mx-auto my-16'>
+      <div className='mx-auto my-16 container-inner'>
         <h1 className='text-4xl font-bold leading-tight'>{post.title}</h1>
-        <div className='text-copy-secondary mt-2 text-gray-600'>
+        <div className='mt-2 text-gray-600 text-copy-secondary'>
           {!post.lastmod ? (
             <span>{post.date}</span>
           ) : (
@@ -50,12 +50,12 @@ function post({ data, pageContext }) {
           </span>
         </div>
 
-        <div className='flex flex-wrap text-sm mt-4'>
+        <div className='flex flex-wrap mt-4 text-sm'>
           {post.tags.map((tag) => (
             <Link
               to={`tag/${kebabCase(tag)}`}
               key={tag}
-              className='bg-gray-300 rounded-full mb-4 lg:mb-0 px-4 py-2 mr-4 hover:bg-green-300 inline-block'
+              className='inline-block px-4 py-2 mb-4 mr-4 bg-gray-300 rounded-full lg:mb-0 hover:bg-green-300'
             >
               {tag}
             </Link>
@@ -63,19 +63,19 @@ function post({ data, pageContext }) {
         </div>
 
         <div
-          className='markdown-body mt-12'
+          className='mt-12 markdown-body'
           dangerouslySetInnerHTML={{ __html: postNode.html }}
         />
 
         {/* <hr /> */}
 
-        <div className='text-center text-3xl md:text-5xl tracking-widest'>
+        <div className='text-3xl tracking-widest text-center md:text-5xl'>
           <span>.</span>
           <span>.</span>
           <span>.</span>
         </div>
 
-        <div className='mb-8 mt-5'>
+        <div className='mt-5 mb-8'>
           <p>
             If you find any error or typo in this article, please feel free to{' '}
             <a
@@ -101,7 +101,7 @@ function post({ data, pageContext }) {
         <Suggested previous={previous} next={next} />
       </div>
 
-      <div className='container-inner mx-auto py-4'>
+      <div className='py-4 mx-auto container-inner'>
         <hr className='' />
       </div>
       <Bio />
@@ -129,18 +129,18 @@ export const postQuery = graphql`
             }
           }
         }
-        category
       }
       parent {
         ... on File {
           mtime(formatString: "MMM DD, Y")
         }
       }
-
+      
       html
       timeToRead
     }
   }
-`;
+  `;
+  // category
 
 export default post;

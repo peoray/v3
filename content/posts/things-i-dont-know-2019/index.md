@@ -3,10 +3,10 @@ title: "Things I Don't Know as of 2019 (In Programming)"
 description: "List of things I haven't used"
 date: 2019-01-05
 published: true
-slug: "things-i-dont-know-2019"
-path: "/blog/things-i-dont-know-2019"
-tags: ['programming']
-category: ['Programming']
+slug: 'things-i-dont-know-2019'
+path: '/blog/things-i-dont-know-2019'
+tags: ['programming', 'career']
+# category: ['Programming']
 template: post
 lastmod: false
 thumbnail: './images/cover.png'

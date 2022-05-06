@@ -6,7 +6,7 @@ published: true
 slug: 'hide-vue-source-map-code-in-production'
 path: '/blog/hide-vue-source-map-code-in-production'
 tags: ['vue', 'webpack']
-category: ['Web Development']
+# category: ['Web Development']
 template: post
 lastmod: false
 thumbnail: './images/cover.png'
@@ -28,7 +28,7 @@ If you used the Vue CLI to create your project, then follow these steps:
 
 ```js
 module.exports = {
-  productionSourceMap: false
+  productionSourceMap: false,
 };
 ```
 

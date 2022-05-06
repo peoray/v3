@@ -5,8 +5,8 @@ date: 2017-11-13
 slug: 'a-new-ending'
 path: '/blog/a-new-ending'
 published: true
-tags: ['perseverance']
-category: ['Personal']
+tags: ['career']
+# category: ['Personal']
 template: post
 lastmod: false
 thumbnail: './images/cover.png'

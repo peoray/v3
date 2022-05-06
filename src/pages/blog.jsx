@@ -49,8 +49,8 @@ function Blog({ data }) {
         customDescription='Posts, tutorials, explanations, snippets, thoughts, musings, and
           everything else.'
       />
-      <div className='container-inner mx-auto py-10'>
-        <h1 className='text-5xl font-bold mb-2'>Articles</h1>
+      <div className='py-10 mx-auto container-inner'>
+        <h1 className='mb-2 text-5xl font-bold'>Articles</h1>
         <p className='mb-6 text-xl'>
           Up to date Posts, tutorials, explanations, snippets, thoughts,
           musings, and everything else.
@@ -64,12 +64,12 @@ function Blog({ data }) {
               value={state.query}
               placeholder='Type to filter posts...'
               onChange={handleInputChange}
-              className='bg-background-form border border-gray-500 rounded-full px-4 pl-10 py-2 outline-none focus:border-green-500 w-full'
+              className='w-full px-4 py-2 pl-10 border border-gray-500 rounded-full outline-none bg-background-form focus:border-green-500'
             />
             <div className='absolute top-0 ml-3' style={{ top: `${10}px` }}>
               <svg
                 fill='currentColor'
-                className='text-gray-500 h-5 w-5'
+                className='w-5 h-5 text-gray-500'
                 viewBox='0 0 24 24'
                 width='24'
                 height='24'
@@ -83,15 +83,15 @@ function Blog({ data }) {
             {query.length > 0 ? (
               <div
                 onClick={() => setState({ query: '' })}
-                className='absolute top-0 right-0 text-2xl mr-3 cursor-pointer text-gray-400 hover:text-gray-700'
+                className='absolute top-0 right-0 mr-3 text-2xl text-gray-400 cursor-pointer hover:text-gray-700'
                 style={{ top: `${2}px` }}
               >
                 &times;
               </div>
             ) : null}
           </div>
-          <div className='text-sm ml-2 self-center'>
-            <p className='bg-gray-600 rounded-full px-4 py-2 mr-4 hover:bg-green-600 font-medium text-white'>
+          <div className='self-center ml-2 text-sm'>
+            <p className='px-4 py-2 mr-4 font-medium text-white bg-gray-600 rounded-full hover:bg-green-600'>
               {posts.length}
             </p>
           </div>
@@ -121,7 +121,6 @@ export const postsQuery = graphql`
             date(formatString: "MMMM DD, Y")
             description
             path
-            category
             published
           }
           timeToRead
@@ -138,4 +137,5 @@ export const postsQuery = graphql`
       }
     }
   }
-`;
+  `;
+  // category

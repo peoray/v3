@@ -5,8 +5,8 @@ date: 2019-06-12T12:50:03+01:00
 published: true
 slug: 'using-concurrently'
 path: '/blog/using-concurrently'
-tags: ['npm', 'concurrently', 'react', 'node']
-category: ['Web Development']
+tags: ['npm', 'node']
+# category: ['Web Development']
 template: post
 lastmod: false
 thumbnail: './images/cover.png'

@@ -5,8 +5,8 @@ date: 2018-01-08
 slug: '100-days-of-code'
 path: '/blog/100-days-of-code'
 published: true
-tags: ['100 days of code']
-category: ['Programming']
+tags: ['100 days of code', 'programming', 'career']
+# category: ['Programming']
 template: post
 lastmod: false
 thumbnail: './images/cover.png'

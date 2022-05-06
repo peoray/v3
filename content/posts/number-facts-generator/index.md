@@ -5,8 +5,8 @@ date: 2018-02-08
 slug: 'number-facts-generator'
 path: '/blog/number-facts-generator'
 published: true
-tags: ['project', 'javascript']
-category: ['Web Development']
+tags: ['programming', 'javascript']
+# category: ['Web Development']
 template: post
 lastmod: false
 thumbnail: './images/cover.png'

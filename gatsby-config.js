@@ -235,7 +235,6 @@ module.exports = {
                     frontmatter {
                       title
                       date
-                      category
                       tags
                       template
                     }
@@ -243,7 +242,8 @@ module.exports = {
                 }
               }
             }
-          `,
+            `,
+            // category
             output: config.siteRss,
             title: config.siteRssTitle,
           },

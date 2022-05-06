@@ -17,7 +17,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const blogTemplate = path.resolve("./src/templates/post.jsx")
   const tagTemplate = path.resolve("./src/templates/tag.jsx")
-  const categoryTemplate = path.resolve("./src/templates/category.jsx")
+  // const categoryTemplate = path.resolve("./src/templates/category.jsx")
   const res = await graphql(`
     query {
       allMarkdownRemark (
@@ -47,7 +47,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   const posts = res.data.allMarkdownRemark.edges
 
   const tagSet = new Set()
-  const categorySet = new Set()
+  // const categorySet = new Set()
 
   posts.forEach((edge, index) => {
     if (edge.node.frontmatter.tags) {
@@ -56,11 +56,11 @@ module.exports.createPages = async ({ graphql, actions }) => {
       })
     }
 
-    if (edge.node.frontmatter.category) {
-      edge.node.frontmatter.category.forEach(category => {
-        categorySet.add(category)
-      })
-    }
+    // if (edge.node.frontmatter.category) {
+    //   edge.node.frontmatter.category.forEach(category => {
+    //     categorySet.add(category)
+    //   })
+    // }
 
     if (edge.node.frontmatter.template === "post") {
       createPage({
@@ -85,15 +85,15 @@ module.exports.createPages = async ({ graphql, actions }) => {
       })
     })
 
-    const categoryList = Array.from(categorySet)
-    categoryList.forEach(category => {
-      createPage({
-        path: `/category/${category.toLowerCase()}/`,
-        component: categoryTemplate,
-        context: {
-          category,
-        },
-      })
-    })
+    // const categoryList = Array.from(categorySet)
+    // categoryList.forEach(category => {
+    //   createPage({
+    //     path: `/category/${category.toLowerCase()}/`,
+    //     component: categoryTemplate,
+    //     context: {
+    //       category,
+    //     },
+    //   })
+    // })
   })
 }

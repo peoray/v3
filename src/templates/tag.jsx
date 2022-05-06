@@ -37,7 +37,6 @@ export const pageQuery = graphql`
             date(formatString: "MMMM D, Y")
             description
             path
-            category
             template
           }
           timeToRead
@@ -49,6 +48,7 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+  `
+  // category
 
 export default tag

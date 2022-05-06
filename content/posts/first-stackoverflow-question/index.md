@@ -5,8 +5,8 @@ date: 2018-05-18
 published: true
 slug: 'first-stackoverflow-question'
 path: '/blog/first-stackoverflow-question'
-tags: ['stackoverflow']
-category: ['Programming']
+tags: ['programming']
+# category: ['Programming']
 template: post
 lastmod: false
 thumbnail: './images/cover.png'

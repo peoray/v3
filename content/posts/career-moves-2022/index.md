@@ -1,5 +1,5 @@
 ---
-title: 'My Career move for 2022'
+title: 'My Career moves for 2022'
 description: 'Growing my career as a software developer'
 date: 2022-05-05
 slug: 'career-moves-2022'

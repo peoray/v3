@@ -5,8 +5,8 @@ date: 2018-04-30
 slug: 'first-day-at-learnfactory'
 path: '/blog/first-day-at-learnfactory'
 published: true
-tags: ['internship', 'learnfactory']
-category: ['Programming']
+tags: ['career']
+# category: ['Programming']
 template: post
 lastmod: false
 thumbnail: './images/cover.png'

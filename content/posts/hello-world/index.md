@@ -1,12 +1,12 @@
 ---
 title: Hello World
 date: 2017-06-19
-description: 'My very first article :)'
+description: 'My very first article'
 slug: 'hello-world'
 path: '/blog/hello-world'
 published: true
-tags: ['blogging']
-category: ['Personal']
+tags: ['career']
+# category: ['Personal']
 template: post
 lastmod: false
 thumbnail: './images/cover.png'
