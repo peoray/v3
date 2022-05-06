@@ -5,14 +5,14 @@ date: 2020-01-02
 slug: 'tech-to-learn-2020'
 path: '/blog/tech-to-learn-2020'
 published: true
-tags: ['sql', 'python', 'typescript', 'react-native', 'graphql']
-category: ['Programming']
+tags: ['career']
+# category: ['Programming']
 template: post
 lastmod: false
 thumbnail: './images/cover.png'
 ---
 
-In 2019, I wrote a blog [article](./things-I-don't-know) about the list of technologies I didn't know yet. It's been a year on from then and this is an update to the list as well as listing out the technologies I want to learn this year to improve as a software developer.
+In 2019, I wrote a blog [article](./things-i-dont-know-2019) about the list of technologies I didn't know yet. It's been a year on from then and this is an update to the list as well as listing out the technologies I want to learn this year to improve as a software developer.
 
 ## WHAT I HAVE LEARNED SO FAR
 
